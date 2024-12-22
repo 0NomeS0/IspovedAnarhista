@@ -24,7 +24,9 @@ define audio.soundTea = "audio/sounds/soundTea.ogg"
 define audio.soundOpenDoor = "audio/sounds/soundOpenDoor.mp3"
 define audio.hihihi = "audio/sounds/hihihi.mp3"
 define audio.shoot = "audio/sounds/shoot.ogg"
+define audio.kickHead = "audio/sounds/kickHead.ogg"
 
 init:
     image dust = Dust("images/dust.png")
+    image screamer = "images/bg/screamer.png"
     define rt = 0

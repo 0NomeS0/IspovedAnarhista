@@ -13,11 +13,12 @@ label chap3:
     hide text
     with dissolve
     
-    show vik normal 
+    scene bg koridor with Dissolve(3.0)
+    show vik normal with dissolve
     i "Сегодня у нас лекция по выш мату?"
     vik @shok "Ага и если не хотим опоздать то нам стоит поспешит"
     i "Come on, man она ж сама вечно опаздывает."
-    vik sad"{cps=5}Лааадно~{/cps} {w=1}убедил. Но мы сядем в первых рядах ибо сегодня важная тема."
+    vik sad"{cps=10}Лааадно~{/cps} {w=1}убедил. Но мы сядем в первых рядах ибо сегодня важная тема."
     i "Да-да"
     vik "Как думаешь \"Красавчик\" сегодня явиться?"
     i"Яхохо, {w}конечно же.... {w}на первую пару... {w}в понедельник..... {w}на лекцию.... "
@@ -25,7 +26,10 @@ label chap3:
     Красавчик- это еще один мой друг.
 
     Мы с ним познакомились уже в самом институте. 
-    
+
+    '''
+    scene bg unikroom with fade
+    '''
     Добравшись до нужной аудитории нас поджидал небольшой сюрприз. 
     
     Во первых в аудитории было довольно многолюдно.
@@ -38,7 +42,7 @@ label chap3:
     '''
     army "Все Парни" 
     army "{size=45}{cps=15}НА ВЫХОД!{/cps} {w}ЖИВО!!!{/size}"
-    "Блять, что же делать..."
+    #"Блять, что же делать..."
     label retry:
         menu:
             "Сидеть ничего не делать":
@@ -52,8 +56,19 @@ label chap3:
 
     
 label endFail:
+    
     play sound shoot
-    scene bg blood with Dissolve(5.0)
+    show screamer at truecenter
+    pause(1.0)
+    show screamer as screamer2 at left 
+    pause(1.0)
+    show screamer as screamer3 at right 
+    pause(1.0)
+    #show screamer at up with vpunch 
+    pause(1.0)
+
+    #scene bg unikroom with Shake((0,0,0,0),1.0,dist = 30)
+    #scene bg blood with dissolve
     "Чувствую"
     return
 
@@ -168,6 +183,9 @@ label wakeUp:
 label sitDown:
     if(rt == 1):
         "Подойдя ко мне ближе, один из солдатов ударил меня по лицу"
+        # Создаёт тряску экрана. Не переборщать с дистанцие
+        play sound kickHead volume 1.0 
+        scene bg unikroom with vpunch #Shake((0,0,0,0),1.0,dist = 30)
         army "Повторять ещё раз не буду, встать!"
     elif (rt == 2):
         "Солдат прицелился"

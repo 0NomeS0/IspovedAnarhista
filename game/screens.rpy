@@ -530,7 +530,7 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
+    xpos gui.navigation_xpos - 120
     yalign 1.0
     yoffset -45
 
