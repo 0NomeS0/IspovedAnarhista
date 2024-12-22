@@ -1,9 +1,13 @@
 label chap2:
-    '''
+    show text '''
     Глава:1 (в тихом омуте....)
     Дата: ХХХХ год.
     Место: город центорий страны z.
-    '''
+    ''' at truecenter
+    with dissolve
+    pause 3.0
+    hide text
+    with dissolve
     play music room fadein 0.5
 
     "Обычное утро понедельника." 
@@ -53,4 +57,5 @@ label chap2:
 
     Идя и болтая о всякой фигне мы доехали до места назначения.
     '''
+    scene black with fade
     jump chap3
