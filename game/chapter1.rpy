@@ -19,7 +19,7 @@ label chap1:
     "Я обернулся и увидел себя"
     play sound soundFall
     window hide
-    show unk normal with Dissolve(3.0)
+    show unk normal at moverUpDown#zoomin #with Dissolve(3.0)
     extend ", только более молодого."
 
     "Наклонив голову, я убедился что перед мной не зеркало , ибо мой двойник даже не думал повторять мои движения."

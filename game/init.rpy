@@ -30,3 +30,46 @@ init:
     image dust = Dust("images/dust.png")
     image screamer = "images/bg/screamer.png"
     define rt = 0
+
+
+#Метка где перед главным меню показывает заставку 
+label splashscreen:
+    
+    scene black
+
+    pause(0.5)
+
+    scene bg dark with fade
+    # если мы напишем просто pause , то ренпи будет ожидать клика
+
+    pause
+
+    scene black with fade
+    #Проиграть указанное видео
+    $ renpy.movie_cutscene("video/main_menu.ogv")
+
+image menu_slideshow:
+    
+    "gui/bg blood.jpg" with dissolve
+
+    pause 3.0
+
+    "gui/bg dark.jpg" with fade
+
+    pause 2.5 
+
+    repeat
+
+#Тестовая анимация для Viktora(Проверка как меняются спрайты со временем)
+image vik move:
+    "vik normal"
+    #Вариации 
+    choice:
+        pause 3
+    choice:
+        pause 5
+    choice:
+        pause 7
+    "vik happy"
+    0.25 # Делает паузу на четверть секунды
+    repeat #Повторяем 

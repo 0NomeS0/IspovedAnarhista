@@ -42,7 +42,7 @@ label chap2:
     scene bg street with fade
     play music street
     $ renpy.pause(2.0)
-    show vik normal with dissolve
+    show vik move with dissolve
     vik @happy "Хо, Ты наконец-то перестал опаздывать с утра, [myname]?"
     i "О, а Ты наконец-то стал похож на человека а не на ходячий труп?"
 

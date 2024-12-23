@@ -1,44 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapter3.rpy", line 50, in script call
-    call sitDown
-  File "game/chapter3.rpy", line 50, in script call
-    call sitDown
-  File "game/chapter3.rpy", line 50, in script call
-    call sitDown
-  File "game/chapter3.rpy", line 66, in script
-    show screamer at up with vpunch
-  File "game/chapter3.rpy", line 66, in <module>
-    show screamer at up with vpunch
-NameError: name 'up' is not defined
+  File "game/chapter1.rpy", line 22, in script
+    show unk normal at zoomin with Dissolve(3.0)
+AttributeError: 'NoneType' object has no attribute 'get_placement'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter3.rpy", line 50, in script call
-    call sitDown
-  File "game/chapter3.rpy", line 50, in script call
-    call sitDown
-  File "game/chapter3.rpy", line 50, in script call
-    call sitDown
-  File "game/chapter3.rpy", line 66, in script
-    show screamer at up with vpunch
+  File "game/chapter1.rpy", line 22, in script
+    show unk normal at zoomin with Dissolve(3.0)
   File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/chapter3.rpy", line 66, in <module>
-    show screamer at up with vpunch
-NameError: name 'up' is not defined
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 489, in show
+    img = i(img) # type: ignore
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\display\movetransition.py", line 339, in OldMoveTransition
+    rv = merge_slide(old_widget, new_widget)
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\display\movetransition.py", line 190, in merge_slide
+    new_pos = position(new)
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\display\movetransition.py", line 37, in position
+    xpos, ypos, xanchor, yanchor, _xoffset, _yoffset, _subpixel = d.get_placement()
+AttributeError: 'NoneType' object has no attribute 'get_placement'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.3.24111502
 Исповедь Анархиста 1.0
-Mon Dec 23 01:03:35 2024
+Tue Dec 24 02:24:43 2024

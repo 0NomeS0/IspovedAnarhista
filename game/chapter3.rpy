@@ -56,7 +56,7 @@ label chap3:
 
     
 label endFail:
-    
+        
     play sound shoot
     show screamer at truecenter
     pause(1.0)
