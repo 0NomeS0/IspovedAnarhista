@@ -32,7 +32,7 @@ init:
     image screamer = "images/bg/screamer.png"
     define rt = 0
     #Инициализация постоянной переменной , которая сохраняет своё значение даже после окончания игры
-    $ persistent.test = 2
+    $ persistent.test = 3
 
 
 #Метка где перед главным меню показывает заставку 
