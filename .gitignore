@@ -1,1 +1,4 @@
+game/saves
+game/cache
 *.save
+log.txt
