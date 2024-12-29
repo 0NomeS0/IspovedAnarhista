@@ -45,7 +45,11 @@ label chap1:
     unk normal "Во вторых перестань тараторить." 
     play sound hihihi
     unk happy "Черт....Ты совершенно ничего не помнишь что с тобой произошло?!"
-    
+    if(persistent.test > 2):
+        play sound hihihi
+        unk happy "АХАХАХАХАХ, ТЫ ТАК МНОГО РАЗ УМЕР, КАКОЙ ТЫ ЖАЛКИЙ"
+    else:
+        unk happy "Пока что ты умер [persistent.test] раз"
     
 
     i "Ты о чём?"

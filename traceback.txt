@@ -1,30 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chapter1.rpy", line 22, in script
-    show unk normal at zoomin with Dissolve(3.0)
-AttributeError: 'NoneType' object has no attribute 'get_placement'
+  File "game/chapter1.rpy", line 50, in script
+    urk happy "АХАХАХАХАХ, ТЫ ТАК МНОГО РАЗ УМЕР, КАКОЙ ТЫ ЖАЛКИЙ"
+Exception: Sayer 'urk' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapter1.rpy", line 22, in script
-    show unk normal at zoomin with Dissolve(3.0)
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 1074, in show_imspec
-    renpy.config.show(name,
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\exports\displayexports.py", line 489, in show
-    img = i(img) # type: ignore
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\display\movetransition.py", line 339, in OldMoveTransition
-    rv = merge_slide(old_widget, new_widget)
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\display\movetransition.py", line 190, in merge_slide
-    new_pos = position(new)
-  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\display\movetransition.py", line 37, in position
-    xpos, ypos, xanchor, yanchor, _xoffset, _yoffset, _subpixel = d.get_placement()
-AttributeError: 'NoneType' object has no attribute 'get_placement'
+  File "game/chapter1.rpy", line 50, in script
+    urk happy "АХАХАХАХАХ, ТЫ ТАК МНОГО РАЗ УМЕР, КАКОЙ ТЫ ЖАЛКИЙ"
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 2573, in execute
+    Say.execute(self)
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Prog\Renpy\renpy-8.3.3-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'urk' is not defined.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.3.24111502
 Исповедь Анархиста 1.0
-Tue Dec 24 02:24:43 2024
+Sun Dec 29 21:58:34 2024

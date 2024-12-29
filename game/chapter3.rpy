@@ -69,7 +69,8 @@ label endFail:
 
     #scene bg unikroom with Shake((0,0,0,0),1.0,dist = 30)
     #scene bg blood with dissolve
-    "Чувствую"
+    "Я перестал видеть..."
+    $ persistent.test +=1
     return
 
 label wakeUp:
