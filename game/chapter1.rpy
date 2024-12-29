@@ -1,5 +1,9 @@
 label chap1:
     #$ renpy.pause(5)
+    #Включить 3д сцену
+
+    #camera:
+    #    perspective True
 
     play music "music/shum.mp3" fadein 0.5
     scene bg dark with Dissolve(5.0)

@@ -1,3 +1,4 @@
+#Файл всех инициализаций 
 
 #Песронажи
 define me = Character("[myname]", color = "#fa0000" )
